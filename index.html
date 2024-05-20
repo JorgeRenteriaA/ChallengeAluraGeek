@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AluraGeek</title>
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+    <!--Imports-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo" id="logo">
+            <div class="logo-item">
+                <img src="img/image 1.png" alt="Logo header">
+            </div>
+            <div class="logo-item">
+                <p class="logo-text">AluraGeek</p>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="main">
+        <section class="column column--left">
+            <p class="title-text">MIS PRODUCTOS:</p>
+            <div class="encabezado__buscar">
+                <input type="search" placeholder="Buscar" id="buscar" class="buscar__input" data-busqueda>
+                <button class="buscar__boton" data-boton-busqueda></button>
+                
+            </div>
+            
+            <div class="card-container"data-lista>
+        
+            </div>
+        </section>
+
+        <section class="column column--right">
+            <form action="" method="post" data-formulario>
+                <h1 class="title-text">AGREGAR PRODUCTO:</h1>
+                <fieldset class="formulario__campo">
+                    <input name="nombre" class="campo__completo" type="text" minlength="4" required placeholder="Nombre..." data-nombre/>
+                    <span class="mensaje-error"></span>
+                </fieldset>
+                <fieldset class="formulario__campo">
+                    <input name="precio" class="campo__completo" type="number" minlength="2" required placeholder="Precio..."  step="0.01" data-precio/>
+                    <span class="mensaje-error"></span>
+                </fieldset>
+                <fieldset class="formulario__campo">
+                    <input name="imagen" class="campo__completo" type="text" minlength="5" required placeholder="Imagen..." data-imagen/>
+                    <span class="mensaje-error"></span>
+                </fieldset>
+                <div class="botones">
+                    <input class="btn-enviar" type="submit" id="enviar" value="Enviar">
+
+                    <input class="btn-limpiar" type="reset" value="Limpiar"/>
+                </div>
+            </form>
+            <div class="respuesta"></div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="footer--container">
+            <div class="footer-item">
+                <img src="img/image 1.png" alt="Logo header">
+            </div>
+            <div class="footer-item">
+                <p class="footer-text">AluraGeek</p>
+            </div>
+        </div>
+        <div class="footer--container--creditos">
+            <p class="footer-text">DESARROLLADO POR JorgeRenteriaA</p>
+        </div>
+        <div class="footer--container--creditos">
+            <p class="footer-text">ALURA LATAM - 2024</p>
+        </div>
+    </footer>
+    <script src="js/main.js" type="module"></script>
+    <script src="js/mostrarProductos.js" type="module"></script>
+    <script src="js/crearProducto.js" type="module"></script>
+    <script src="js/buscarProducto.js" type="module"></script>
+    <script src="js/eliminarProducto.js" type="module"></script>
+</body>
+
+</html>

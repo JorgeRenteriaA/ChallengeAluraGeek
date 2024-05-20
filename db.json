@@ -1,0 +1,34 @@
+{
+  "productos": [
+    {
+      "nombre": "Nintendo switch",
+      "precio": "5000",
+      "imagen": "https://ss423.liverpool.com.mx/xl/1111297220_Vf50XEJ1.jpg",
+      "id": 1
+    },
+    {
+      "nombre": "Xbox series X",
+      "precio": "9500",
+      "imagen": "https://m.media-amazon.com/images/I/51ojzJk77qL._AC_UF1000,1000_QL80_.jpg",
+      "id": 2
+    },
+    {
+      "nombre": "Funko Pop Genshin Impact Paimon",
+      "precio": "250",
+      "imagen": "https://i5.walmartimages.com.mx/mg/gm/1p/images/product-images/img_large/00088969868382-1l.jpg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
+      "id": 3
+    },
+    {
+      "nombre": "Figura Shogun Raiden Genshin Impact",
+      "precio": "320",
+      "imagen": "https://m.media-amazon.com/images/I/51gtEZSnXbL.jpg",
+      "id": 4
+    },
+    {
+      "nombre": "Kit accesorios gaming KDA League of legends Logitech",
+      "precio": "4000",
+      "imagen": "https://m.media-amazon.com/images/I/81cOqaUu9DL._AC_UF350,350_QL80_DpWeblab_.jpg",
+      "id": 5
+    }
+  ]
+}

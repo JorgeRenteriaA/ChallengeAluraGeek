@@ -1,0 +1,201 @@
+@import url("style.css");
+
+.buscar__input {
+    width: 260px;
+    height: 32px;
+    border: 1px solid rgb(211, 211, 211);
+    font-size: 16px;
+    padding: 3px 8px;
+    border: 1px solid rgb(211, 211, 211);
+    color: var(--primary-color);
+}
+
+.buscar__boton {
+    background-image: url("../img/search.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid rgb(211, 211, 211);
+    background-color: #F9F9F9;
+    border-left: none;
+    padding: 15px 15px;
+    cursor: pointer;
+}
+
+.encabezado__buscar {
+    display: flex;
+    justify-content: center;
+}
+
+.title-text {
+    text-align: center;
+    font-size: 1.2em;
+    font-family: "Press Start 2P", system-ui;
+    margin-top: 1.8em;
+    color: var(--color-text);
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    gap: 2em;
+    padding-bottom: 100px;
+}
+
+
+.column {
+    display: grid;
+    gap: 0.5em;
+}
+
+.column--left {
+    margin-right: 1em;
+    box-shadow: -12px 12px 7px rgba(0, 0, 0, 0.1);
+    /* Sombras en el borde izquierdo y abajo */
+    overflow-y: scroll;
+    overflow-x: hidden;
+    white-space: nowrap;
+    max-height: 42rem;
+    height: auto;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    width: 800px;
+
+}
+
+.eliminar-producto{
+    cursor: pointer;
+    background-color: var(--card-color);
+}
+
+.column--left::-webkit-scrollbar {
+    width: 12px;  
+}
+
+.column--left::-webkit-scrollbar-track {
+    background: var(--text-color);  
+}
+
+.column--left::-webkit-scrollbar-thumb {
+    background-color: rgba(12, 12, 12, 0.1);
+    border-radius: var(--border-radius);  
+}
+
+.column--right {
+    margin-left: 1em;
+    max-width: 500px;
+    /* Establecer el ancho del 40% para la columna derecha */
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 5px;
+}
+
+.card {
+    flex: 0 1 calc(33.33% - 3em);
+    
+    /* Cambiar el ancho de la tarjeta */
+    padding: 0.5em 0.7em 0 0.5em;
+    background-color: var(--primary-color);
+    border-radius: var(--border-radius);
+    margin-bottom: 2em;
+    border: 5px solid var(--color-text);
+    text-align: center;
+    box-shadow: -12px 12px 0px rgba(0, 0, 0, 0.2);
+    /* Sombras en el borde izquierdo y abajo */
+}
+
+.card-img {
+    width: 180px;
+    height: 180px;
+    border: 5px solid var(--color-text);
+}
+
+.card-container-text {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1em;
+    text-align: left;
+    word-wrap: break-word;
+	white-space:normal;
+    padding-bottom: 15px;
+}
+
+.card-container--value {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 0;
+}
+
+.card-container--value-img {
+    width: 20px;
+    height: 20px;
+}
+
+.card-container--value-text {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.1em;
+
+}
+
+fieldset {
+    border: none;
+    padding-top: 20px;
+}
+
+.campo__completo {
+    display: block;
+    border: 4px solid var(--primary-color);
+    border-radius: 20px;
+    width: 100%;
+    padding: 1em;
+    margin-top: .5em;
+
+}
+
+.mensaje-error {
+    display: block;
+    margin-top: 5px;
+    font-weight: 400;
+    font-style: italic;
+    font-size: .925rem;
+    color: red;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+
+.btn-enviar {
+    background-color: var(--color-boton);
+    border: 3px solid var(--color-text);
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 50px;
+    margin-left: 10px;
+    width: 90%;
+}
+
+.btn-limpiar {
+    background: var(--text-color);
+    border: 3px solid var(--color-text);
+    border-radius: 24px;
+    color: var(--color-boton);
+    cursor: pointer;
+    height: 50px;
+    margin-right: 10px;
+    width: 90%;
+}

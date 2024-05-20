@@ -1,0 +1,36 @@
+@import url("footer.css");
+
+footer {
+    background-color: var(--color-card);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-item {
+    text-align: center;
+    font-size: 1.2em;
+    font-family: "Press Start 2P", system-ui;
+}
+
+.footer--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-item img {
+    margin-right: 10px; /* Ajusta el margen derecho según sea necesario */
+}
+
+.footer--container--creditos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1em;
+}

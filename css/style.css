@@ -1,0 +1,73 @@
+:root {
+    --color-card: hsl(265, 96%, 43%);
+    --color-boton: hsl(217, 96%, 17%);
+    --color-text: hsl(0, 0%, 15%);
+    --text-color: hsl(0, 0%, 98%);
+    --bg-color: hsl(0, 0%, 100%);
+    --transition: 0.2s, background-color 0.2s ease-in-out;
+    --primary-color: hsl(265, 96%, 43%);
+    --border-radius: 0.6em;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: sans-serif;
+    transition: var(--transition);
+}
+
+body.dark {
+    --bg-color: hsl(0, 0%, 15%);
+    --color-text: hsl(0, 0%, 98%);
+}
+
+@media screen and (max-width: 395px) {
+    /*Header*/
+    .logo-item img {
+        width: 80px;
+        height: auto;
+    }
+
+    .logo-text {
+        font-family: "Press Start 2P", system-ui;
+        font-weight: 200;
+        font-size: 0.8rem;
+        color: var(--text-color);
+    }
+
+    .main {
+        flex-direction: column-reverse;
+    }
+
+    .column {
+        max-width: calc(100%);
+    }
+
+    .column--left {
+        margin: 0;
+        width: 90%;
+        overflow: hidden;
+    }
+
+    .card {
+        flex-basis: 90%; 
+        max-width: calc(80%); 
+        margin-right: 5px; 
+        margin-bottom: 2em; 
+    }
+    .card-img {
+        width: 200px;
+        height: 200px;
+    }
+}

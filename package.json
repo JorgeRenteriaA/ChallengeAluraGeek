@@ -1,0 +1,22 @@
+{
+  "name": "alurageek",
+  "version": "1.0.0",
+  "description": "Simulacion api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JorgeRenteriaA/AluraGeek.git"
+  },
+  "author": "JorgeRenteriaA",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JorgeRenteriaA/AluraGeek/issues"
+  },
+  "homepage": "https://github.com/JorgeRenteriaA/AluraGeek#readme",
+  "dependencies": {
+    "json-server": "^1.0.0-alpha.23"
+  }
+}

@@ -1,0 +1,27 @@
+@import url("style.css");
+
+.header {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 75%;
+    padding: 0 1.5em;
+    background-color: var(--color-card);
+    transition: var(--transition);
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.logo-text {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--text-color);
+}
+
